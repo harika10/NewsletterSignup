@@ -33,10 +33,10 @@ app.post("/", function(req, res){
 
   const jsonData = JSON.stringify(data);
 
-  const url = "https://us2.api.mailchimp.com/3.0/lists/a1a3c20510"
+  const url = "#"
   const options = {
     method: "POST",
-    auth: "harika10:0846407ba555343554e34354c77d8586-us2"
+    auth: "#"
   }
   const request = https.request(url, options, function(response){
     if(response.statusCode === 200){
@@ -63,5 +63,3 @@ app.listen(process.env.PORT || 3000, function(){
 });
 
 
-// API Key - 0846407ba555343554e34354c77d8586-us2
-// List ID - a1a3c20510
